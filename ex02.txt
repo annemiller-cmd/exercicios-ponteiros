@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(){
+  int n1,n2;
+
+  printf("Endereço de n1:"%p",&n1);
+  printf("Endereço de n2:"%p",&n2);
+
+  if(&n1:&n2)
+    printf("\nEnderço n1 é maior");
+  else
+    printf("\nEnderço n1 é maior");
+}
