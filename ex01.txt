@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+int *inteiro1,inteiro2=1;
+float *real1,real2=8.8;
+char *letra1,letra2='a';
+
+inteiro1= &inteiro2;
+real1= &real2;
+letra1= &letra2;
+
+printf("interiro2 antes=%d\n",*inteiro1);
+printf("real2 antes=%f\n",*real1);
+printf("letra2 antes=%c\n",*letra1);
+
+*inteiro1=2;
+*real1=9.9;
+*letra1='b';
+
+printf("interiro2 depois=%d\n",*inteiro1);
+printf("real2 depois=%f\n",*real1);
+printf("letra2 depois=%c\n",*letra1);
+
+return 0;
+}
