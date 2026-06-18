@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+void trocaMaior(int *x,int *y){
+  int aux;
+  if(*x<*y){
+  aux=*x;
+  *x=*y;
+  *y=aux;
+  }
+}
+
+int main(){
+  int n1,n2;
+
+  printf("N1:");
+  scanf("%d",&n1);
+  printf("N2:");
+  scanf("%d",&n2);
+  trocaMaior(&n1,&n2);
+  printf("\nN1:%d",n1);
+  printf("\nN2:%d",n2);
+}
